@@ -16,5 +16,8 @@
     "systemjs": "^0.20.12",
     "systemjs-plugin-traceur": "0.0.3",
     "traceur": "0.0.111"
+  },
+  "dependencies": {
+    "redux": "^3.6.0"
   }
 }
