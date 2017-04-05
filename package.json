@@ -17,6 +17,7 @@
   "author": "Sanborn Hilland",
   "license": "ISC",
   "devDependencies": {
+    "expect": "^1.20.2",
     "http-server": "github:sanbornhilland/http-server",
     "mocha": "^3.2.0",
     "mocha-traceur": "^2.1.0",
