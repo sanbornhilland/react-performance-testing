@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Boilerplate</title>
+</head>
+<body>
+
+  <h1></h1>
+
+  <script src="node_modules/traceur/bin/traceur-runtime.js"></script>
+  <script src="node_modules/traceur/bin/BrowserSystem.js"></script>
+
+  <script>
+    window.System = new traceur.loader.BrowserTraceurLoader()
+    System.import('/src/main.js')
+      .then(({ helloWorld }) => {
+        const title = document.querySelector('h1')
+        title.textContent = helloWorld()
+      })
+  </script>
+
+</body>
+</html>
