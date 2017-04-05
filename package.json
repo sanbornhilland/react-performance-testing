@@ -1,19 +1,11 @@
 {
-  "name": "js-project-boilerplate",
+  "name": "learning-redux",
   "version": "0.1.0",
-  "description": "JS project boilerplate for playing around",
   "main": "index.js",
   "scripts": {
     "start": "http-server . -o",
     "test": "mocha --compilers js:mocha-traceur test/*"
   },
-  "keywords": [
-    "JavaScript",
-    "boilerplate",
-    "test",
-    "ES2015",
-    "ES6"
-  ],
   "author": "Sanborn Hilland",
   "license": "ISC",
   "devDependencies": {
