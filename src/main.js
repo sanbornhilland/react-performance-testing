@@ -1,5 +1,7 @@
+import { GREETING } from './dependency.js'
+
 function helloWorld () {
-  return `Hello World`
+  return GREETING
 }
 
 export {
