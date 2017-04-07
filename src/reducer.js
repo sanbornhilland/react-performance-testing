@@ -1,4 +1,4 @@
-import { VisibilityFilters, SET_VISIBILITY_FILTER, ADD_TODO, TOGGLE_TODO } from './actions'
+import { VisibilityFilters, SET_VISIBILITY_FILTER, ADD_TODO, TOGGLE_TODO } from './actions.js'
 import { combineReducers } from 'redux'
 
 const SHOW_ALL = VisibilityFilters.SHOW_ALL
