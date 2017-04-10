@@ -15,7 +15,6 @@
         'plugin-traceur': 'node_modules/systemjs-plugin-traceur/plugin-traceur.js',
         'traceur': 'node_modules/traceur/bin/traceur.js',
         'traceur-runtime': 'node_modules/traceur/bin/traceur/traceur-runtime.js',
-        'redux': 'node_modules/redux/dist/redux.js'
       },
       meta: {
         'traceur': {
@@ -31,7 +30,11 @@
       transpilerRuntime: false
     });
 
-    SystemJS.import('/src/store.js')
+    SystemJS.import('/src/main.js')
+      .then(({ helloWorld }) => {
+        const title = document.querySelector('h1')
+        title.textContent = helloWorld()
+      })
   </script>
 
 </body>
