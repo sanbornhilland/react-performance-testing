@@ -17,19 +17,21 @@ export default class Container extends Component {
   }
 
   render() {
-    // Pass the full state object to both components
+    // Pass only the props that are required so that presentation
+    // can be a PureComponent
+    //
     // Note we are going to use Presentation 7x because
     // it mimics the HelpPopUp situation
     return (
       <div id="i-am-the-container">
-        <Presentation {...this.state} />
-        <Presentation {...this.state} />
-        <Presentation {...this.state} />
-        <Presentation {...this.state} />
-        <Presentation {...this.state} />
-        <Presentation {...this.state} />
-        <Presentation {...this.state} />
-        <Presentation {...this.state} />
+        <Presentation message={this.state.message} />
+        <Presentation message={this.state.message} />
+        <Presentation message={this.state.message} />
+        <Presentation message={this.state.message} />
+        <Presentation message={this.state.message} />
+        <Presentation message={this.state.message} />
+        <Presentation message={this.state.message} />
+        <Presentation message={this.state.message} />
         <Clock {...this.state} />
       </div>
     )

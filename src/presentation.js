@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 
-const Presentation = (props) => {
-  return (
-    <div id="i-am-presentation">
-      {props.message}
-    </div>
-  )
+class Presentation extends PureComponent {
+  constructor(props) {
+    super(props)
+  }
+
+  render () {
+    return (
+      <div id="i-am-presentation">
+        {this.props.message}
+      </div>
+    )
+  }
 }
 
 export default Presentation
