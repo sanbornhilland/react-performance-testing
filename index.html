@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JS Boilerplate</title>
+  <title>React Performance Testing</title>
 </head>
 <body>
-
-  <h1></h1>
 
   <script src="jspm_packages/system.js"></script>
   <script src="config.js"></script>
 
   <script>
-    SystemJS.import('/src/main.js')
-      .then(({ helloWorld }) => {
-        const title = document.querySelector('h1')
-        title.textContent = helloWorld()
+    SystemJS.import('/src/app.js')
+      .then((module) => {
+        init = module.default
+
+        init()
       })
   </script>
+
+  <div id="app"></div>
 
 </body>
 </html>
